@@ -29,10 +29,26 @@ a {
   text-align: center;
   padding: 2vw;
   margin: 0vw;
+  animation-duration: 1s;
+  animation: float 5s infinite;
 }
 @media (max-width: 900px) {
   .Ofsted_Quote{
   font-size: 6.5vw;
+  }
+}
+
+@keyframes float {
+  0% {
+      transform: translateY(0);
+  }
+
+  50% {
+      transform: translateY(-5px);
+  }
+
+  100% {
+      transform: translateY(0);
   }
 }
 
@@ -547,6 +563,9 @@ blockquote {
   /* background-image: url(../img/infinite-loop-01.jpg); */
   }
 }
+
+
+
 
 .tm-OurCurr-content {
   position: relative;
